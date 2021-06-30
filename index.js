@@ -24,7 +24,6 @@ const todoApi = require('./api/todoApi');
 
 app.use('/', todoApi);
 
-
 // prisijungimas prie duomenu bazes
 mongoose
   .connect(process.env.MONGO_CONN_STRING, {
