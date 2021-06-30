@@ -13,9 +13,7 @@ const mongoose = require('mongoose');
 const PORT = process.env.PORT || 5000;
 
 app.use(
-  cors({
-    origin: 'https://js3-special.herokuapp.com',
-  })
+  cors()
 );
 // middle ware - to get req.body in json
 app.use(express.json());
